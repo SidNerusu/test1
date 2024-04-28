@@ -1,0 +1,22 @@
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-primary:hover {
+    background-color: #23272b;
+    border-color: #23272b;
+}
+
+footer.footer {
+    background-color: #343a40;
+    color: white;
+}
