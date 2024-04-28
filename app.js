@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3000; 
 
-const blogRouter = require('./src/routes/blogRoutes');
+const blogRoutes = require('./src/routes/BlogRoutes');
 const feedRoutes = require('./routes/feed');
 
 
@@ -24,7 +24,7 @@ app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
 
-app.use('/', blogRouter);
+app.use('/', blogRoutes);
 app.use('/feed', feedRoutes);
 
 app.listen(port, () => {
