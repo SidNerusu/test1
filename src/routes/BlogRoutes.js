@@ -106,4 +106,29 @@ blogRouter.get('/shoulders', (req, res) => {     res.render('shoulders', {
 
 );
 
+blogRouter.get('/pullup', (req, res) => {     res.render('pullup', {        
+  nav: [   
+  { link: '/home', title: 'Home' },             
+  { link: '/login', title: 'Log in' },           
+  { link: '/about', title: 'About' },            
+  { link: '/contact', title: 'Contact' },       
+    ],
+    title: 'pullup'     });
+   }
+
+);
+
+blogRouter.get('/workout', (req, res) => {     res.render('workout', {        
+  nav: [   
+  { link: '/home', title: 'Home' },             
+  { link: '/login', title: 'Log in' },           
+  { link: '/about', title: 'About' },            
+  { link: '/contact', title: 'Contact' },       
+    ],
+    title: 'workout'     });
+   }
+
+);
+
+
 module.exports = blogRouter;
