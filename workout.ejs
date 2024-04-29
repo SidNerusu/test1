@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to Your First Workout</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS -->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FF9989;
+        }
+       
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            font-family: 'Arial Black', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        article {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 60px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .back-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 40px;
+        }
+        .back-button:hover {
+            background-color: #333;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">GymBro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <%for(let i=0; i<nav.length; i++) {%>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <div class="text-left mt-3 ml-3">
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <div class="container">
+
+        <article>
+            <h2>Welcome to Your Fitness Journey!</h2>
+            <p>Congratulations on taking the first step towards a healthier lifestyle! Embarking on your fitness journey is an empowering decision that opens doors to countless physical and mental benefits. With dedication and guidance, you'll achieve milestones you never thought possible.</p>
+            <p>In this comprehensive beginner's guide, we'll equip you with the knowledge and tools to kickstart your fitness journey effectively and safely.</p>
+        </article>
+        
+        <article>
+            <h2>Setting Realistic Goals</h2>
+            <p>Setting clear and achievable goals is fundamental to your success. Start by identifying what you want to accomplish. Whether it's losing weight, gaining muscle, or improving endurance, make sure your goals are specific, measurable, attainable, relevant, and time-bound (SMART).</p>
+            <p>For instance, rather than saying, "I want to lose weight," set a SMART goal like, "I aim to lose 10 pounds in the next three months by exercising four times a week and reducing my daily calorie intake by 500 calories."</p>
+            <p>Remember to track your progress regularly. Take photos at different stages of your journey to visually document your transformation. These progress photos can be incredibly motivating and help you stay on track.</p>
+        </article>
+        
+        <article>
+            <h2>Choosing the Right Workout</h2>
+            <p>With countless workout options available, selecting the right one can be overwhelming. As a beginner, opt for activities that align with your interests, fitness level, and goals. Whether it's strength training, cardio, yoga, or a combination, the key is to find something you enjoy.</p>
+            <p>Consider starting with a beginner-friendly program or consulting a fitness professional to design a personalized workout plan. Remember, consistency and enjoyment are paramount to long-term adherence.</p>
+            <p>As you embark on your fitness journey, don't forget to take progress photos. These photos not only serve as a visual record of your transformation but also provide invaluable motivation during moments of doubt or plateau.</p>
+        </article>
+        
+        <article>
+            <h2>Importance of Nutrition</h2>
+            <p>Nutrition fuels your body and directly impacts your fitness progress. Adopting a balanced and nutritious diet is essential for energy, performance, and recovery. Aim to consume a variety of whole foods, including lean proteins, complex carbohydrates, healthy fats, fruits, and vegetables.</p>
+            <p>Hydration is equally crucial. Drink plenty of water throughout the day, especially before, during, and after workouts, to maintain optimal performance and aid in recovery.</p>
+            <p>Alongside your dietary adjustments, consider incorporating progress photos into your routine. These photos serve as tangible evidence of your hard work and dedication, inspiring you to maintain healthy eating habits and stay on track with your fitness goals.</p>
+        </article>
+        
+        <article>
+            <h2>Staying Consistent</h2>
+            <p>Consistency is the cornerstone of success in any fitness endeavor. Establish a regular workout routine that fits your schedule and lifestyle. Start with manageable frequency and gradually increase intensity and duration as you progress.</p>
+            <p>Remember, progress takes time, so be patient and persistent. Listen to your body, prioritize rest and recovery, and celebrate every small victory along the way. With dedication and perseverance, you'll achieve your fitness goals and transform your life.</p>
+            <p>As you stay consistent with your workouts, don't forget to capture your journey through progress photos. These visual representations of your efforts serve as powerful reminders of how far you've come and reinforce your commitment to continued growth and improvement.</p>
+        </article>
+        
+    </div>
+
+    <!-- JavaScript for Back Button -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

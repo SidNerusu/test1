@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBro - How to Do Your First Pull-Up</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <style>
+        
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Arial Black', sans-serif;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .exercise {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .back-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #333;
+        }
+        .video-container iframe,  
+        .video-container object,  
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <body style="background-color: #FF9989;">
+     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">GymBro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <%for(let i=0; i<nav.length; i++) {%>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <div class="text-left mt-3 ml-3">
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Title -->
+    <div class="text-center mt-2">
+        <div style="display: inline-block; background-color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h1>How To Do Your First Pull-Up</h1>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="exercise">
+            <h2>Step 1: Grip Strength</h2>
+            <p>Start by improving your grip strength. This is crucial for performing pull-ups effectively. Exercises like dead hangs, farmer's walks, and wrist curls can help strengthen your grip.</p>
+            <div class="video-container">
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/rt17lmnaLSM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="exercise">
+            <h2>Step 2: Assisted Pull-Ups</h2>
+            <p>Once you've built some grip strength, it's time to work on the pull-up motion. Use resistance bands or an assisted pull-up machine to practice the motion with assistance.</p>
+            <div class="video-container">
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/vKpqOpjJt18" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="exercise">
+            <h2>Step 3: Negative Pull-Ups</h2>
+            <p>Negative pull-ups are a great way to build strength for pull-ups. Jump or use a chair to get to the top position, then lower yourself slowly to build strength.</p>
+            <div class="video-container">
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/gbPURTSxQLY" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="exercise">
+            <h2>Step 4: Band-Assisted Pull-Ups</h2>
+            <p>If you're still struggling with pull-ups, try using a resistance band looped over the bar to provide assistance as you perform pull-ups. This can help you get used to the motion while still building strength.</p>
+            <div class="video-container">
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/5rR_bzBc1NA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Concluding Text -->
+        <div class="exercise">
+            <h2>After You Can Do All of This</h2>
+            <p>Congratulations! You've built the necessary strength and technique to perform a pull-up. Keep practicing and challenging yourself to improve further!</p>
+        </div>
+    </div>
+    <!-- JavaScript for Back Button -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
